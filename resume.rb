@@ -11,9 +11,13 @@ class Resume < Formula
 
  
   def install
-  prefix.install 'README.md'
-  prefix.install 'Versions'
-  bin.install 'pandoc_script'
+    prefix.install 'README.md'
+    prefix.install 'Versions'
+    bin.install 'pandoc_script'
+  end
+  
+  def post_install
+    pandoc_script /usr/local/Cellar/resume/$(ls -t /usr/local/Cellar/resume | head -1)/README.md
   end
  
 end
