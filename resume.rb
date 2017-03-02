@@ -7,7 +7,7 @@ class Resume < Formula
   head "https://github.com/privatezero/Resume.git"
   sha256 "10e68724df3e47dfd4bfff614021bded0a9e0220e4c20950743ba813e915df47"
   depends_on 'pandoc'
-  revision 2
+  revision 3
 
  
   def install
@@ -17,7 +17,7 @@ class Resume < Formula
   end
   
   def post_install
-    pandoc_script /usr/local/Cellar/resume/$(ls -t /usr/local/Cellar/resume | head -1)/README.md
+    system `"echo pandoc_script /usr/local/Cellar/resume/$(ls -t /usr/local/Cellar/resume | head -1)/README.md"`
   end
  
 end
