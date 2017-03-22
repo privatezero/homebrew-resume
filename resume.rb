@@ -7,12 +7,14 @@ class Resume < Formula
   head "https://github.com/privatezero/Resume.git"
   sha256 "368f8a4a58adb9e6aa2401a3d1e3712ce2f0f6d50b0013a911f6e7a3075aa380"
   depends_on 'pandoc'
+  revision 1
 
  
   def install
     prefix.install 'README.md'
     prefix.install 'Versions'
     bin.install 'pandoc_script'
+    etc.install 'custom-reference.odt'
   end
   
   def post_install
