@@ -7,7 +7,7 @@ class Resumelinux < Formula
     prefix.install 'README.md'
     prefix.install 'Versions'
     bin.install 'pandoc_script'
-    etc.install 'custom-reference.odt'
+    prefix.install 'custom-reference.odt'
   end
   
   def post_install
