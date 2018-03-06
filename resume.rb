@@ -3,9 +3,9 @@
 class Resume < Formula
   desc ""
   homepage ""
-  url "https://github.com/privatezero/Resume/archive/0.0.02.zip"
+  url "https://github.com/privatezero/Resume/archive/0.0.03.zip"
   head "https://github.com/privatezero/Resume.git"
-  sha256 "368f8a4a58adb9e6aa2401a3d1e3712ce2f0f6d50b0013a911f6e7a3075aa380"
+  sha256 "4a351c3423fac387d7216d477cf5fed8e0a5cfd41e96d02adbfd16769c233dfb"
   depends_on 'pandoc'
   revision 2
 
