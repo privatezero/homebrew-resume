@@ -11,7 +11,7 @@ class Resumelinux < Formula
   end
   
   def post_install
-    system `echo "pandoc_script ~/linuxbrew/.linuxbrew/Cellar/resumelinux/$(ls -t ~/linuxbrew/.linuxbrew/Cellar/resumelinux/ | head -1)/README.md > /dev/null"`
+    system `echo "pandoc_script /home/linuxbrew/.linuxbrew/Cellar/resumelinux/$(ls -t /home/linuxbrew/.linuxbrew/Cellar/resumelinux/ | head -1)/README.md > /dev/null"`
   end
  
 end
